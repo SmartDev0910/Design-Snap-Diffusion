@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 400px) {
+  .background-gradient::before {
+    background: radial-gradient(
+      50% 50%,
+      rgba(243, 181, 89, 0.5) 0%,
+      rgba(37, 38, 44, 0) 100%
+    );
+    z-index: -10;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    transform: scale(1);
+    pointer-events: none;
+  }
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url("./fonts/Arimo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dallas";
+  src: url("./fonts/Dallas-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dallas-Bold";
+  src: url("./fonts/Dallas-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Monument Regular";
+  src: url("./fonts/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: "Monument Bold";
+  src: url("./fonts/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+  font-family: "Articulat";
+  src: url("./fonts/ArticulatCF-Normal.ttf");
+}
+
+@font-face {
+  font-family: "Code Bold";
+  src: url("./fonts/code_bold.otf");
+}
+
+label.btn.btn--file.btn--primary.btn--upload {
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #CDC0B2;
+  border-color: #CDC0B2;
+}
+
+a.uploader__submitted-file__action {
+  color: #4C3D30;
+}
